@@ -4,87 +4,132 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pizzería Fatto</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff8f0;
+    }
+
+    header {
+      background-color: #d32f2f;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h2 {
+      color: #d32f2f;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background-color: #fff;
+      margin: 10px auto;
+      padding: 15px;
+      max-width: 400px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 1.1rem;
+    }
+
+    .contacto p {
+      margin: 0.5rem 0;
+    }
+
+    .btn-whatsapp {
+      display: inline-block;
+      margin-top: 1rem;
+      background-color: #25D366;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      li {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
 
-  <!-- HEADER -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
-    <div class="container">
-      <a class="navbar-brand" href="#">Pizzería Fatto</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#menu">Menú</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <header>
+    <h1>Pizzería Fatto</h1>
+    <nav>
+      <a href="#menu">Menú</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
 
-  <!-- MENÚ -->
-  <section id="menu" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center mb-4">Menú</h2>
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card text-center">
-            <div class="card-body">
-              <h5 class="card-title">Pizza Mozzarella</h5>
-              <p class="card-text">Clásica y deliciosa.</p>
-              <p class="fw-bold text-danger">$4000</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card text-center">
-            <div class="card-body">
-              <h5 class="card-title">Pizza Fugazzetta</h5>
-              <p class="card-text">Cebolla, queso y más sabor.</p>
-              <p class="fw-bold text-danger">$6000</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card text-center">
-            <div class="card-body">
-              <h5 class="card-title">Pizza Cuatro Quesos</h5>
-              <p class="card-text">Mozzarella, roquefort, reggianito y cheddar.</p>
-              <p class="fw-bold text-danger">$5500</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <section id="menu">
+    <h2>Menú</h2>
+    <ul>
+      <li> Pizza Mozzarella - $4000</li>
+      <li> Pizza Fugazzetta - $6000</li>
+      <li> Pizza Cuatro Quesos - $5500</li>
+    </ul>
   </section>
 
-  <!-- CONTACTO -->
-<section id="contacto" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center mb-4">Contáctanos</h2>
-    <div class="row">
-      <div class="col-md-6 text-center">
-        <p><strong>Tel:</strong> 123-456-789</p>
-        <p><strong>Dirección:</strong> Calle Córdoba 1053</p>
-        <a href="https://wa.me/123456789" class="btn btn-success mb-3" target="_blank">Hacer pedido por WhatsApp</a>
-      </div>
-      <div class="col-md-6">
-        <iframe 
-         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4147.530380279858!2d-58.74072007987698!3d-34.664644967677646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbfe3c894d66b%3A0x17441e591546d823!2sUniversidad%20Nacional%20del%20Oeste%20-%20Sede%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1748985538204!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </iframe>
-      </div>
-    </div>
-  </div>
-</section>
-  
-  <!-- FOOTER -->
-  <footer class="bg-dark text-white text-center py-3">
+  <section id="contacto" class="contacto">
+    <h2>Contáctanos</h2>
+    <p><strong>Tel:</strong> 123-456-789</p>
+    <p><strong>Dirección:</strong> Calle Córdoba 123</p>
+    <a href="https://wa.me/123456789" class="btn-whatsapp" target="_blank">Hacer pedido por WhatsApp</a>
+
+    <!-- Mapa de Google -->
+    <iframe 
+      src=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4147.530380279858!2d-58.74072007987698!3d-34.664644967677646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbfe3c894d66b%3A0x17441e591546d823!2sUniversidad%20Nacional%20del%20Oeste%20-%20Sede%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1748985538204!5m2!1ses!2sar 
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+  </section>
+
+  <footer>
     <p>&copy; 2025 Pizzería Fatto</p>
   </footer>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
