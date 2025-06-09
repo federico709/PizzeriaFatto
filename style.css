@@ -91,15 +91,15 @@ footer {
   background-color: #ccc;
   padding: 1em;
 }
-.redes-sociales a {
+/* Estilos para íconos de redes sociales */
+.redes-sociales i {
   font-size: 2rem;
   color: #d32f2f;
-  text-decoration: none;
   margin: 0 10px;
   transition: transform 0.2s, color 0.2s;
 }
 
-.redes-sociales a:hover {
+.redes-sociales i:hover {
   transform: scale(1.2);
   color: #b71c1c;
 }
