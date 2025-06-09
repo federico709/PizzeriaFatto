@@ -91,3 +91,15 @@ footer {
   background-color: #ccc;
   padding: 1em;
 }
+.redes-sociales a {
+  font-size: 2rem;
+  color: #d32f2f;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.redes-sociales a:hover {
+  transform: scale(1.2);
+  color: #b71c1c;
+}
