@@ -130,3 +130,37 @@ footer {
   color: #333;
   margin-top: 0.5rem;
 }
+.contacto-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.info-contacto, .formulario-contacto {
+  flex: 1 1 300px;
+  max-width: 500px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.formulario-contacto input[type="submit"] {
+  background-color: #d32f2f;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  margin-top: 10px;
+}
+
+.formulario-contacto input[type="submit"]:hover {
+  background-color: #b71c1c;
+}
